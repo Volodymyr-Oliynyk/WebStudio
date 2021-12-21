@@ -1,0 +1,30 @@
+.contact-list {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    @extend %flex-center;
+    @include font(500, 14px, 1.14, 0.02em);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $primary-shade-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

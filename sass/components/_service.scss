@@ -1,0 +1,34 @@
+.service {
+  padding-top: 0;
+}
+
+.service-list {
+  display: flex;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: $background-color-servis-block;
+  }
+
+  &__title {
+    text-align: center;
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+
+    color: $secondary-color;
+  }
+}

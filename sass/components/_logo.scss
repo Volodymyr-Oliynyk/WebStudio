@@ -1,0 +1,14 @@
+.logo {
+  font-family: Raleway;
+  @include font(700, 26px, 1.19, 0.03em);
+
+  color: $primary-color;
+
+  &__web {
+    color: $accent-color;
+  }
+}
+
+.logo--secondary {
+  color: $secondary-shade-color;
+}
