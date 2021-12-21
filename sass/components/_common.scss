@@ -32,7 +32,10 @@ body {
 }
 
 .container {
-  width: 1200px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  // width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
