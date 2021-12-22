@@ -4,3 +4,9 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin formula($mn, $mb, $mr) {
+  flex-basis: $mn;
+  margin-bottom: $mb;
+  margin-right: $mr;
+}

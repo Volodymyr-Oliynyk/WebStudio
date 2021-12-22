@@ -2,32 +2,43 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
-    margin-right: -30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   &__item {
     @media screen and (min-width: $tablet) {
-      width: 354px;
-      height: auto;
-      flex-basis: calc(100% / 2 - 30px);
-      margin-bottom: 30px;
-      margin-right: 30px;
+      @include formula(100%/2, 30px, 30px);
     }
   }
-  // &__item:nth-child(2) {
-  //   margin-right: -30px;
-  // }
+
+  &__item:nth-child(2n) {
+    @media screen and (min-width: $tablet) {
+      margin-right: -30px;
+    }
+  }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       margin-right: 30px;
     }
   }
 
   &__icon-wraper {
-    // width: 100%;
-    padding: 25px 190px;
+    @media screen and (min-width: $mobile) {
+      padding: 25px 190px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding: 25px 142px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 25px 100px;
+    }
 
     border-radius: 4px;
 
@@ -36,12 +47,14 @@
 
   &__icon {
     display: block;
+    margin: 0;
   }
 
   &__title {
     @media screen and (min-width: $mobile) {
       text-align: center;
     }
+
     margin-top: 30px;
     margin-bottom: 10px;
 

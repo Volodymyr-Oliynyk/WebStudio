@@ -54,6 +54,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding: 94px 0;
 }
@@ -256,35 +268,62 @@ body {
   .skills-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
-    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-list {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
 @media screen and (min-width: 768px) {
   .skills-list__item {
-    width: 354px;
-    height: auto;
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: 50%;
     margin-bottom: 30px;
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .skills-list__item:nth-child(2n) {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .skills-list__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .skills-list__icon-wraper {
-  padding: 25px 190px;
   border-radius: 4px;
   background: #f5f4fa;
 }
 
+@media screen and (min-width: 480px) {
+  .skills-list__icon-wraper {
+    padding: 25px 190px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-list__icon-wraper {
+    padding: 25px 142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-list__icon-wraper {
+    padding: 25px 100px;
+  }
+}
+
 .skills-list__icon {
   display: block;
+  margin: 0;
 }
 
 .skills-list__title {
@@ -358,17 +397,44 @@ body {
   background-color: #f5f4fa;
 }
 
-.team-list {
-  display: flex;
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .team-list__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.122), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: 354px;
+    height: auto;
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item:nth-child(2n) {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .teammate {
@@ -398,6 +464,7 @@ body {
 
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list__item:not(:first-child) {
@@ -430,23 +497,62 @@ body {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.clients-list__item {
-  flex-basis: calc(100 / 6);
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: 33.33333%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc(100 / 6);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list__item:nth-child(2n) {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item:nth-child(3n) {
+    margin-right: -30px;
+  }
 }
 
 .clients-list__link {
   display: flex;
-  padding: 16px 35px;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__link {
+    padding: 16px 52px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    padding: 16px 60px;
+  }
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
@@ -455,6 +561,7 @@ body {
 }
 
 .clients-list__icon {
+  display: block;
   fill: currentColor;
 }
 

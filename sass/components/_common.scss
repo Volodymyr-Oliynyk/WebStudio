@@ -35,7 +35,14 @@ body {
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
-  // width: 1200px;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
   padding: 0 15px;
   margin: 0 auto;
 }
