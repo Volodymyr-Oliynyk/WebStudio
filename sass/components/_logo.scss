@@ -10,5 +10,8 @@
 }
 
 .logo--secondary {
+  @media screen and (min-width: $mobile) {
+    justify-content: center;
+  }
   color: $secondary-shade-color;
 }

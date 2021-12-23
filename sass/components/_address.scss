@@ -1,5 +1,8 @@
 .address {
   margin-top: 20px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 60px;
+  }
 
   &__item {
     font-style: normal;

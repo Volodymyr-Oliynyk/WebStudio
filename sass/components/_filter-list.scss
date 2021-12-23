@@ -1,7 +1,23 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: $mobile) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;

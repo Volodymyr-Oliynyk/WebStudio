@@ -5,8 +5,17 @@
   &__container {
     display: flex;
     align-items: center;
+    @media screen and (min-width: $mobile) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
+  &__address {
+    @media screen and (min-width: $mobile) {
+      display: block;
+    }
+  }
   &__social {
     margin-left: 70px;
   }
