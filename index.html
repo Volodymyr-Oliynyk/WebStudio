@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
         <a href="./index.html" class="logo link"> <span class="logo__web">Web</span>Studio</a>
         <nav class="nav">
@@ -50,8 +50,60 @@
             >
           </li>
         </ul>
+
+        <button type="menu" class="menu-button">
+          <svg class="menu-button__icon" width="40" height="40">
+            <use href="img/icons.svg#menu-btn"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu">
+        <button class="close-button mob-close-btn">
+          <svg class="close-button__icon" width="18" height="18">
+            <use href="./img/icons.svg#close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mob-nav list">
+          <li class="mob-nav__item">
+            <a href="./index.html" class="mob-nav__link mob-nav__link--current link">Студия</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="./portfolio.html" class="mob-nav__link link">Портфолио</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mob-contact list">
+          <li class="mob-contact__item">
+            <a href="tel:+380961111111" class="mob-contact__tel-link link"> +38 096 111 11 11 </a>
+          </li>
+          <li class="mob-contact__item">
+            <a href="mailto:info@devstudio.com" class="mob-contact__mail-link link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mob-social list">
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link link">Instagram</a>
+          </li>
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link link">Twitter</a>
+          </li>
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link link">Facebook</a>
+          </li>
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
@@ -119,6 +171,7 @@
             <li class="service-list__item">
               <img
                 class="service-list__image"
+                srcset="./img/write.jpg 1x, ./img/write-2x.jpg 2x"
                 src="img/write.jpg"
                 alt="печатают на клавиатуре"
                 width="370"
@@ -131,6 +184,7 @@
             <li class="service-list__item">
               <img
                 class="service-list__image"
+                srcset="./img/modile.jpg 1x, ./img/modile-2x.jpg 2x"
                 src="./img/modile.jpg"
                 alt="проверяет мобильный"
                 width="370"
@@ -143,6 +197,7 @@
             <li class="service-list__item">
               <img
                 class="service-list__image"
+                srcset="./img/color.jpg 1x, ./img/color-2x.jpg 2x"
                 src="./img/color.jpg"
                 alt="цветовая сетка"
                 width="370"
@@ -163,6 +218,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__image"
+                srcset="./img/photo-igor.jpg 1x, ./img/photo-igor-2x.jpg 2x"
                 src="./img/photo-igor.jpg"
                 alt="фото игоря"
                 width="270"
@@ -206,6 +262,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__image"
+                srcset="./img/photo-olha.jpg 1x, ./img/photo-olha-2x.jpg 2x"
                 src="./img/photo-olha.jpg"
                 alt="фото ольги"
                 width="270"
@@ -250,6 +307,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__image"
+                srcset="./img/photo-nikolay.jpg 1x, ./img/photo-nikolay-2x.jpg 2x"
                 src="./img/photo-nikolay.jpg"
                 alt="фото николая"
                 width="270"
@@ -388,8 +446,8 @@
       </section>
     </main>
 
-    <!-- <footer class="footer"> -->
-      <!-- <div class="footer__container container">
+    <footer class="footer">
+      <div class="footer__container container">
         <div class="footer__address">
           <a href="./index.html" class="logo logo--secondary link"
             ><span class="logo__web">Web</span>Studio</a
@@ -413,9 +471,9 @@
               </li>
             </ul>
           </address>
-        </div> -->
+        </div>
 
-        <!-- <div class="footer__social">
+        <div class="footer__social">
           <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="social-list list">
             <li class="social-list__item">
@@ -447,8 +505,8 @@
               </a>
             </li>
           </ul>
-        </div> -->
-<!-- 
+        </div>
+
         <div class="footer__subscribe">
           <h3 class="footer__title">Подпишитесь на рассылку</h3>
           <form action="#" class="subscribe-form">
@@ -464,7 +522,7 @@
               <svg class="primary-button__icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-telegram"></use>
               </svg>
-            </button> -->
+            </button>
           </form>
         </div>
       </div>
@@ -563,5 +621,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

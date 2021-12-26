@@ -1,26 +1,33 @@
 .footer {
   background-color: $primary-background-color;
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    align-items: center;
-    @media screen and (min-width: $mobile) {
+    // display: flex;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    @media screen and (min-width: $tablet) {
+      display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
     }
   }
 
   &__address {
     @media screen and (min-width: $mobile) {
-      display: block;
     }
   }
   &__social {
+    @media screen and (min-width: $mobile) {
+      display: block;
+      margin: 60px auto;
+    }
     margin-left: 70px;
   }
 
   &__title {
+    text-align: center;
     margin-bottom: 20px;
     margin-right: auto;
 

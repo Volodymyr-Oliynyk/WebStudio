@@ -5,6 +5,10 @@
   }
 
   &__item {
+    @media screen and (min-width: $mobile) {
+      text-align: center;
+    }
+
     font-style: normal;
     @include font(400, 14px, 1.71, 0.03em);
   }

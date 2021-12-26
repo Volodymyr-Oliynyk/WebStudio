@@ -3,7 +3,9 @@
   margin-left: 93px;
 
   &__list {
-    display: flex;
+    @media screen and (min-width: $mobile) {
+      display: none;
+    }
     color: $primary-color;
   }
 

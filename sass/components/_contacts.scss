@@ -1,5 +1,7 @@
 .contact-list {
-  display: flex;
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
   margin-left: auto;
 
   &__item:not(:first-child) {

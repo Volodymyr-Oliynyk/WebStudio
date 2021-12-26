@@ -1,17 +1,77 @@
 .hero {
+  width: 100%;
   text-align: center;
-  padding: 200px 0;
-
+  background-position: center;
   margin: 0 auto;
 
-  background-image: linear-gradient(
-      rgba($primary-background-color, 0.4),
-      rgba($primary-background-color, 0.4)
-    ),
-    url(../img/hero-backgraund.svg);
-  background-position: center;
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+    padding: 118px 0;
+    background-image: linear-gradient(
+        rgba($primary-background-color, 0.4),
+        rgba($primary-background-color, 0.4)
+      ),
+      url(../img/hero-backgraund-mob-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .box {
+        background-image: linear-gradient(
+            rgba($primary-background-color, 0.4),
+            rgba($primary-background-color, 0.4)
+          ),
+          url(../img/hero-backgraund-mob-2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 118px 0;
+    background-image: linear-gradient(
+        rgba($primary-background-color, 0.4),
+        rgba($primary-background-color, 0.4)
+      ),
+      url(../img/hero-backgraund-tab-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .box {
+        background-image: linear-gradient(
+            rgba($primary-background-color, 0.4),
+            rgba($primary-background-color, 0.4)
+          ),
+          url(../img/hero-backgraund-tab-2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: $desktop;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        rgba($primary-background-color, 0.4),
+        rgba($primary-background-color, 0.4)
+      ),
+      url(../img/hero-backgraund-desk-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .box {
+        background-image: linear-gradient(
+            rgba($primary-background-color, 0.4),
+            rgba($primary-background-color, 0.4)
+          ),
+          url(../img/hero-backgraund-desk-2x.jpg);
+      }
+    }
+  }
 
   &__title {
+    text-align: center;
+    margin: 0 auto 30px auto;
+
+    text-transform: uppercase;
+
+    color: $secondary-color;
+
     @media screen and (max-width: 1199px) {
       @include font(900, 26px, 1.61, 0.06em);
       max-width: 360px;
@@ -21,11 +81,5 @@
       @include font(900, 44px, 1.36, 0.06em);
       max-width: 696px;
     }
-    text-align: center;
-    margin: 0 auto 30px auto;
-
-    text-transform: uppercase;
-
-    color: $secondary-color;
   }
 }

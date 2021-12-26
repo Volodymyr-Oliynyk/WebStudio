@@ -1,0 +1,67 @@
+.mob-menu {
+  @media screen and (min-width: 320px) and (max-width: $tablet) {
+    padding-right: 15px;
+    padding-left: 40px;
+    position: fixed;
+    z-index: 5;
+    top: 0%;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.mob-nav {
+  margin: 48px 25px;
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    @include font(500, 40px, 1.17, 0.02em);
+    color: $primary-color;
+  }
+  &__link--current {
+    color: $accent-color;
+  }
+}
+
+.mob-contact {
+  margin-top: 302px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__tel-link {
+    @include font(500, 34px, 1.17, 0.02em);
+    color: $accent-color;
+  }
+
+  &__mail-link {
+    @include font(500, 24px, 1.16, 0.02em);
+    color: $primary-shade-color;
+  }
+}
+
+.mob-social {
+  display: flex;
+  margin-top: 64px;
+  margin-right: auto;
+  margin-left: -10px;
+
+  &__item {
+    margin-left: 10px;
+  }
+
+  &__item:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__link {
+    margin-left: 10px;
+    @include font(500, 18px, 1.22, 0.02em);
+    color: $accent-color;
+  }
+}
