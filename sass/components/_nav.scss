@@ -1,10 +1,16 @@
 .nav {
   cursor: pointer;
   margin-left: 93px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 88px;
+  }
 
   &__list {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
       display: none;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
     }
     color: $primary-color;
   }
