@@ -213,12 +213,6 @@ body {
   color: #f5f4fa;
 }
 
-@media screen and (min-width: 480px) {
-  .logo--secondary {
-    justify-content: center;
-  }
-}
-
 .nav {
   cursor: pointer;
   margin-left: 93px;
@@ -473,7 +467,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1200px;
+    max-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-backgraund-desk-1x.jpg);
   }
@@ -547,6 +541,7 @@ body {
 }
 
 .skills-list__icon-wraper {
+  display: flex;
   border-radius: 4px;
   background: #f5f4fa;
 }
@@ -571,7 +566,7 @@ body {
 
 .skills-list__icon {
   display: block;
-  margin: 0;
+  margin-right: 0;
 }
 
 .skills-list__title {
@@ -1032,6 +1027,12 @@ body {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 767px) {
+  .footer__subscribe {
+    margin-right: auto;
+  }
+}
+
 .address {
   margin-top: 20px;
 }
@@ -1050,7 +1051,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .address__item {
     text-align: center;
   }
@@ -1083,6 +1084,12 @@ body {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+  }
+}
+
 .subscribe-form__input {
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1096,11 +1103,18 @@ body {
   background-color: transparent;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .subscribe-form__input {
     display: block;
     width: 450px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 

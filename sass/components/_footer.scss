@@ -18,9 +18,10 @@
   }
 
   &__address {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $desktop) {
     }
   }
+
   &__social {
     @media screen and (min-width: $mobile) {
       display: block;
@@ -42,5 +43,8 @@
 
   &__subscribe {
     margin-left: auto;
+    @media screen and (min-width: $tablet) and (max-width: 767px) {
+      margin-right: auto;
+    }
   }
 }

@@ -1,17 +1,11 @@
 .subscribe-form {
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $desktop) {
+    display: flex;
   }
-  // display: flex;
 
   &__input {
-    @media screen and (min-width: $mobile) {
-      display: block;
-      width: 450px;
-      margin-bottom: 20px;
-    }
-    // width: 358px;
     padding: 15px 16px;
-    // margin-right: 12px;
+
     border: 1px solid rgba($secondary-color, 0.3);
     border-radius: 4px;
 
@@ -21,5 +15,15 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
     background-color: transparent;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      display: block;
+      width: 450px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-right: 12px;
+    }
   }
 }

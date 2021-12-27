@@ -28,6 +28,7 @@
   }
 
   &__icon-wraper {
+    display: flex;
     @media screen and (min-width: $mobile) {
       padding: 25px 190px;
     }
@@ -47,7 +48,7 @@
 
   &__icon {
     display: block;
-    margin: 0;
+    margin-right: 0;
   }
 
   &__title {
