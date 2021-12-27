@@ -52,9 +52,10 @@
   }
 
   &__subscribe {
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    @media screen and (min-width: $mobile) and (min-width: $tablet) {
       margin: auto;
     }
+
     @media screen and (min-width: $desktop) {
       margin-left: auto;
     }

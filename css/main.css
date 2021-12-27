@@ -1042,7 +1042,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
   .footer__subscribe {
     margin: auto;
   }
@@ -1125,7 +1125,7 @@ body {
   background-color: transparent;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .subscribe-form__input {
     display: block;
     width: 450px;
