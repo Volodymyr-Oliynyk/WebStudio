@@ -22,8 +22,11 @@
     display: none;
   }
 }
+.mob-menu-top {
+  margin-top: 48px;
+}
 .mob-nav {
-  margin: 48px 25px;
+  // margin: 48px 25px;
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -37,9 +40,10 @@
   }
 }
 
-.mob-menu-botom {
+.mob-menu-bottom {
   margin-top: auto;
 }
+
 .mob-contact {
   &__item:not(:last-child) {
     margin-bottom: 32px;

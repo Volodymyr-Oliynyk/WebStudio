@@ -157,7 +157,7 @@ body {
 }
 
 .mob-close-btn {
-  border-color: transparent;
+  border: none;
 }
 
 .menu-button {
@@ -356,8 +356,8 @@ body {
   }
 }
 
-.mob-nav {
-  margin: 48px 25px;
+.mob-menu-top {
+  margin-top: 48px;
 }
 
 .mob-nav__item:not(:last-child) {
@@ -376,7 +376,7 @@ body {
   color: #2196f3;
 }
 
-.mob-menu-botom {
+.mob-menu-bottom {
   margin-top: auto;
 }
 
