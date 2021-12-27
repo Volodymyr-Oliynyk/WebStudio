@@ -17,12 +17,23 @@
     }
   }
 
+  &__address {
+    @media screen and (min-width: $tablet) {
+      margin-left: 76px;
+    }
+  }
+
   &__social {
     @media screen and (min-width: $mobile) {
       display: block;
       margin: 60px auto;
     }
-    margin-left: 70px;
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin: 0 89px auto auto;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: auto;
+    }
   }
 
   &__title {
@@ -37,9 +48,11 @@
   }
 
   &__subscribe {
-    margin-left: auto;
-    @media screen and (min-width: $tablet) and (max-width: 767px) {
-      margin-right: auto;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin: auto;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: auto;
     }
   }
 }

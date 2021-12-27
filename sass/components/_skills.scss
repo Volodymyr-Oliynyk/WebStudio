@@ -31,6 +31,7 @@
   &__icon-wraper {
     display: flex;
     justify-content: center;
+
     @media screen and (min-width: $mobile) {
       padding: 25px 190px;
     }

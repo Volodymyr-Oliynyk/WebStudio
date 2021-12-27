@@ -5,8 +5,9 @@
   }
 
   &__item {
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      text-align: center;
+    text-align: center;
+    @media screen and (min-width: $desktop) {
+      text-align: start;
     }
 
     font-style: normal;
