@@ -1,16 +1,19 @@
 .footer {
+  min-width: 320px;
   background-color: $primary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
   &__container {
-    // display: flex;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 
