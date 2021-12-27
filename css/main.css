@@ -376,8 +376,8 @@ body {
   color: #2196f3;
 }
 
-.mob-contact {
-  margin-top: 302px;
+.mob-menu-botom {
+  margin-top: auto;
 }
 
 .mob-contact__item:not(:last-child) {
@@ -996,6 +996,12 @@ body {
   .footer__container {
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer__address {
+    margin-bottom: 30px;
   }
 }
 

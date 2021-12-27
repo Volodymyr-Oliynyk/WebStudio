@@ -37,9 +37,10 @@
   }
 }
 
+.mob-menu-botom {
+  margin-top: auto;
+}
 .mob-contact {
-  margin-top: 302px;
-
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }

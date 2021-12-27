@@ -18,6 +18,10 @@
   }
 
   &__address {
+    @media screen and (min-width: 320px) {
+      margin-bottom: 30px;
+    }
+
     @media screen and (min-width: $tablet) {
       margin-left: 76px;
     }
