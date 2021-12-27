@@ -185,12 +185,6 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 480px) {
-  .header {
-    padding: 16px 0;
-  }
-}
-
 .header__container {
   display: flex;
   align-items: center;
@@ -320,6 +314,7 @@ body {
   .contact-list__link {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -506,6 +501,10 @@ body {
   }
 }
 
+.skills-list {
+  min-width: 320px;
+}
+
 @media screen and (min-width: 768px) {
   .skills-list {
     display: flex;
@@ -542,6 +541,7 @@ body {
 
 .skills-list__icon-wraper {
   display: flex;
+  justify-content: center;
   border-radius: 4px;
   background: #f5f4fa;
 }
@@ -993,9 +993,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-around;
   }
 }

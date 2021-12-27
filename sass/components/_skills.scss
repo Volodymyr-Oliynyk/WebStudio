@@ -1,4 +1,5 @@
 .skills-list {
+  min-width: 320px;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +30,7 @@
 
   &__icon-wraper {
     display: flex;
+    justify-content: center;
     @media screen and (min-width: $mobile) {
       padding: 25px 190px;
     }

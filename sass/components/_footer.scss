@@ -10,15 +10,10 @@
       flex-wrap: wrap;
     }
     @media screen and (min-width: $desktop) {
-      display: flex;
+      // display: flex;
       align-items: center;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       justify-content: space-around;
-    }
-  }
-
-  &__address {
-    @media screen and (min-width: $desktop) {
     }
   }
 

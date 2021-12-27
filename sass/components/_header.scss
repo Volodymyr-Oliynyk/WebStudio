@@ -1,8 +1,5 @@
 .header {
   min-width: 320px;
-  @media screen and (min-width: $mobile) {
-    padding: 16px 0;
-  }
 
   border-bottom: 1px solid $primary-border-color;
 
