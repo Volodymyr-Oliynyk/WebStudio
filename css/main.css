@@ -754,7 +754,6 @@ body {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1008,6 +1007,12 @@ body {
 @media screen and (min-width: 768px) {
   .footer__address {
     margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__logo-wraper {
+    text-align: center;
   }
 }
 

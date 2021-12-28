@@ -26,6 +26,11 @@
       margin-left: 76px;
     }
   }
+  &__logo-wraper {
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
 
   &__social {
     @media screen and (min-width: $mobile) {
