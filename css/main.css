@@ -1153,6 +1153,19 @@ body {
   height: 100%;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 203px 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -1165,16 +1178,29 @@ body {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
+  height: auto;
   padding: 40px;
-  width: 528px;
-  min-height: 100px;
-  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    margin: auto;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 100px;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal .modal__title {
@@ -1293,6 +1319,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox-field__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox-field__icon-wraper {

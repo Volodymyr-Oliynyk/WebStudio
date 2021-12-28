@@ -106,6 +106,9 @@
     @include font(400, 14px, 1.71, 0.03em);
 
     color: $primary-shade-color;
+    @media screen and (min-width: $mobile) {
+      @include font(400, 12px, 1.16, 0.03em);
+    }
   }
 
   &__icon-wraper {
