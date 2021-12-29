@@ -29,6 +29,9 @@
       align-items: center;
       margin-bottom: 10px;
     }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
+    }
   }
 
   &__link:not(:first-child) {
