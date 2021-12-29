@@ -16,18 +16,35 @@
     }
   }
   &__contact {
-    display: flex;
     margin-bottom: 60px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      // margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      align-items: center;
+    }
   }
 
   &__address {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
     @media screen and (min-width: $tablet) {
       margin-left: 76px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0;
     }
   }
   &__logo-wraper {
     text-align: center;
     margin-bottom: 20px;
+    @media screen and (min-width: $desktop) {
+      text-align: start;
+    }
   }
 
   &__social {
@@ -35,7 +52,7 @@
       margin-left: 165px;
     }
     @media screen and (min-width: $desktop) {
-      margin-left: auto;
+      margin-left: 70px;
     }
   }
 
@@ -48,13 +65,16 @@
     text-transform: uppercase;
 
     color: $secondary-color;
+    @media screen and (min-width: $desktop) {
+      text-align: start;
+    }
   }
 
   &__subscribe {
     margin: auto;
 
     @media screen and (min-width: $desktop) {
-      margin-left: auto;
+      margin: auto;
     }
   }
 }

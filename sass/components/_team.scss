@@ -16,20 +16,23 @@
   }
 
   &__item {
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-      height: auto;
-      margin: 15px;
-      flex-basis: calc((100%-60px) / 2);
-    }
-
     box-shadow: 0px 1px 3px rgba($shadows-color, 0.122), 0px 1px 1px rgba($shadows-color, 0.14),
       0px 2px 1px rgba($shadows-color, 0.2);
+
+    @media screen and (min-width: $tablet) {
+      height: auto;
+      margin: 15px;
+      width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 120px) / 4);
+    }
   }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: $desktop) {
-      margin-right: 30px;
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 30px;
     }
   }
 }
