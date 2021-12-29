@@ -51,6 +51,7 @@
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   top: 8px;
   right: 8px;
@@ -72,11 +73,15 @@
 
 .mob-close-btn {
   border: none;
+  padding: 0;
+  top: 17px;
+  right: 23px;
 }
 
 .menu-button {
   @extend %button;
-
+  display: flex;
+  align-items: center;
   margin-left: auto;
   background-color: transparent;
 

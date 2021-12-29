@@ -19,10 +19,6 @@
     margin-right: 50px;
   }
 
-  &__link--current {
-    color: $accent-color;
-  }
-
   &__link--current::after {
     content: '';
     width: 100%;
@@ -49,6 +45,10 @@
 
   &__link:hover,
   &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link--current {
     color: $accent-color;
   }
 }

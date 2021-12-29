@@ -17,6 +17,7 @@
     background-color: transparent;
     @media screen and (min-width: $mobile) {
       display: block;
+      align-items: center;
       width: 450px;
       margin-bottom: 20px;
     }

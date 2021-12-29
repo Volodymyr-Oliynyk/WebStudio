@@ -1,7 +1,12 @@
 .header {
   min-width: 320px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $primary-border-color;
+  @media screen and (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &__container {
     display: flex;

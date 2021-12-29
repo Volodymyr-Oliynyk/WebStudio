@@ -1,9 +1,4 @@
 .address {
-  margin-top: 20px;
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 60px;
-  }
-
   &__item {
     text-align: center;
     @media screen and (min-width: $desktop) {

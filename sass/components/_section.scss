@@ -1,19 +1,21 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 
-  @media screen and (min-width: $mobile) and (min-width: $tablet) {
-    padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
   }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 
-    @include font(700, 36px, 1.17, 0.03em);
     color: $primary-color;
 
-    @media screen and (min-width: $mobile) and (min-width: $tablet) {
-      @include font(700, 33px, 1.17, 0.03em);
+    @include font(700, 33px, 1.17, 0.03em);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      @include font(700, 36px, 1.17, 0.03em);
     }
   }
 }

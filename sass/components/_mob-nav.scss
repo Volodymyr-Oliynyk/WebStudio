@@ -1,0 +1,14 @@
+.mob-nav {
+  // margin: 48px 25px;
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    @include font(500, 40px, 1.17, 0.02em);
+    color: $primary-color;
+  }
+
+  &__link--current {
+    color: $accent-color;
+  }
+}

@@ -1,9 +1,11 @@
 .hero {
-  min-width: 320px;
-
   text-align: center;
   background-position: center;
-  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 118px 0;
+
   background-image: linear-gradient(
       rgba($primary-background-color, 0.4),
       rgba($primary-background-color, 0.4)
@@ -11,8 +13,6 @@
     url(../img/hero-backgraund.svg);
 
   @media screen and (min-width: $mobile) {
-    max-width: $mobile;
-    padding: 118px 0;
     background-image: linear-gradient(
         rgba($primary-background-color, 0.4),
         rgba($primary-background-color, 0.4)
@@ -31,8 +31,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
-    padding: 118px 0;
     background-image: linear-gradient(
         rgba($primary-background-color, 0.4),
         rgba($primary-background-color, 0.4)
