@@ -254,17 +254,6 @@ body {
   margin-right: 50px;
 }
 
-.nav__link--current::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-}
-
 .nav__link {
   display: block;
   padding: 32px 0;
@@ -277,11 +266,22 @@ body {
   position: relative;
 }
 
-.nav__link:hover, .nav__link:focus {
+.nav__link--current {
   color: #2196f3;
 }
 
-.nav__link--current {
+.nav__link--current::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
 
@@ -783,36 +783,50 @@ body {
   fill: currentColor;
 }
 
-.filter-list {
-  display: flex;
+.filter-list-wrap {
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .filter-list {
-    flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .filter-list-wrap {
     margin-bottom: 40px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .filter-list-wrap {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
 @media screen and (min-width: 768px) {
   .filter-list {
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filter-list {
     justify-content: center;
-    margin-bottom: 50px;
   }
 }
 
 .filter-list__item {
-  margin-bottom: 15px;
+  margin: 8px 0 8px 8px;
 }
 
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .filter-list__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) {

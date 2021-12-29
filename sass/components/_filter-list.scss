@@ -1,25 +1,37 @@
-.filter-list {
-  display: flex;
+.filter-list-wrap {
+  margin-bottom: 30px;
 
-  @media screen and (min-width: $mobile) {
-    flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
   }
 
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+
   @media screen and (min-width: $tablet) {
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
   }
 
   @media screen and (min-width: $desktop) {
     justify-content: center;
-    margin-bottom: 50px;
   }
 
   &__item {
-    margin-bottom: 15px;
+    margin: 8px 0 8px 8px;
   }
 
   &__item:not(:last-child) {
-    margin-right: 8px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 8px;
+    }
   }
 }
