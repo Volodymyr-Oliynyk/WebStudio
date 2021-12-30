@@ -295,6 +295,10 @@ body {
   }
 }
 
+.contact-list__item {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .contact-list__item:not(:first-child) {
     margin-right: 0;
@@ -307,8 +311,10 @@ body {
   }
 }
 
-.contact-list__item {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-list__link {
@@ -324,7 +330,6 @@ body {
   .contact-list__link {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
   }
 }
 
@@ -332,10 +337,6 @@ body {
   .contact-list__link {
     margin-bottom: 0;
   }
-}
-
-.contact-list__link:not(:first-child) {
-  margin-bottom: 10px;
 }
 
 .contact-list__link:hover, .contact-list__link:focus {
@@ -533,7 +534,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .skills-list__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
@@ -543,14 +544,11 @@ body {
 @media screen and (min-width: 1200px) {
   .skills-list__item {
     width: calc((100% - 120px) / 4);
-    margin: 15px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .skills-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.skills-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .skills-list__icon-wraper {
@@ -599,14 +597,13 @@ body {
 
 .service-list {
   display: flex;
+  margin: -15px;
 }
 
 .service-list__item {
   position: relative;
-}
-
-.service-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin: 15px;
+  width: calc((100% - 90px) / 2);
 }
 
 .service-list__title-overlay {
@@ -667,7 +664,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -799,14 +796,12 @@ body {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -8px;
+  margin: -8px -4px;
 }
 
 @media screen and (min-width: 768px) {
   .filter-list {
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
   }
 }
 
@@ -817,13 +812,7 @@ body {
 }
 
 .filter-list__item {
-  margin: 8px 0 8px 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .filter-list__item:not(:last-child) {
-    margin-right: 8px;
-  }
+  margin: 8px 4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -843,13 +832,14 @@ body {
 
 @media screen and (min-width: 1200px) {
   .projects__item {
-    margin: 15px;
     width: calc((100% - 90px) / 3);
   }
 }
 
-.projects__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .projects__item:hover, .projects__item:focus {
@@ -915,17 +905,18 @@ body {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    align-items: center;
-    justify-content: space-around;
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -942,19 +933,13 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__contact {
     margin: 0;
-    align-items: center;
+    align-items: baseline;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer__address {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__address {
-    margin-left: 76px;
   }
 }
 
@@ -1005,13 +990,15 @@ body {
   }
 }
 
-.footer__subscribe {
-  margin: auto;
+@media screen and (max-width: 1199px) {
+  .footer__subscribe {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__subscribe {
-    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -1065,6 +1052,9 @@ body {
 
 .subscribe-form__input {
   padding: 15px 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-weight: 400;
@@ -1076,12 +1066,9 @@ body {
   background-color: transparent;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .subscribe-form__input {
-    display: block;
-    align-items: center;
     width: 450px;
-    margin-bottom: 20px;
   }
 }
 

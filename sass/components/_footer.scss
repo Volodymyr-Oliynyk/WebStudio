@@ -4,26 +4,24 @@
   background-color: $primary-background-color;
 
   &__container {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
     @media screen and (min-width: $desktop) {
-      // display: flex;
-      align-items: center;
-      // flex-wrap: wrap;
-      justify-content: space-around;
+      display: flex;
+      align-items: baseline;
     }
   }
   &__contact {
     margin-bottom: 60px;
     @media screen and (min-width: $tablet) {
       display: flex;
-      // margin-bottom: 60px;
     }
     @media screen and (min-width: $desktop) {
       margin: 0;
-      align-items: center;
+      align-items: baseline;
     }
   }
 
@@ -33,7 +31,7 @@
     }
 
     @media screen and (min-width: $tablet) {
-      margin-left: 76px;
+      // margin-left: 76px;
     }
     @media screen and (min-width: $desktop) {
       margin: 0;
@@ -71,10 +69,12 @@
   }
 
   &__subscribe {
-    margin: auto;
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+    }
 
     @media screen and (min-width: $desktop) {
-      margin: 0;
+      margin-left: auto;
     }
   }
 }

@@ -12,13 +12,14 @@
     }
 
     @media screen and (min-width: $desktop) {
-      margin: 15px;
       width: calc((100% - 90px) / 3);
     }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__item:hover,
