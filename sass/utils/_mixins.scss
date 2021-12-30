@@ -10,3 +10,15 @@
   margin-bottom: $mb;
   margin-right: $mr;
 }
+
+@mixin bg-img($url, $withGrad: true) {
+  @if $withGrad {
+    background-image: linear-gradient(
+        rgba($primary-background-color, 0.4),
+        rgba($primary-background-color, 0.4)
+      ),
+      url($url);
+  } @else {
+    background-image: url($url);
+  }
+}
