@@ -27,6 +27,9 @@
 }
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   max-width: 450px;
   max-height: 100vh;
@@ -35,16 +38,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $secondary-color;
 
-  @media screen and (min-width: $mobile) {
-    position: relative;
-  }
-
-  @media screen and (min-width: $tablet) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-  }
+  transform: translate(-50%, -50%) scale(1);
 
   @media screen and (min-width: $desktop) {
     max-width: 528px;
