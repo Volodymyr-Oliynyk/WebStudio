@@ -3,17 +3,19 @@
   flex-wrap: wrap;
   margin-top: 64px;
   margin-right: auto;
-  margin-left: -10px;
+
   &__item {
-    margin-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
   }
 
-  &__item:not(:first-child) {
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  &__item:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
   }
 
   &__link {
-    margin-left: 10px;
     @include font(500, 18px, 1.22, 0.02em);
     color: $accent-color;
   }

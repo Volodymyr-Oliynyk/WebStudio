@@ -19,7 +19,7 @@
       ),
       url(../img/hero-backgraund-mob-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
       .box {
         background-image: linear-gradient(
             rgba($primary-background-color, 0.4),
@@ -37,7 +37,7 @@
       ),
       url(../img/hero-backgraund-tab-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
       .box {
         background-image: linear-gradient(
             rgba($primary-background-color, 0.4),
@@ -57,7 +57,7 @@
       ),
       url(../img/hero-backgraund-desk-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
       .box {
         background-image: linear-gradient(
             rgba($primary-background-color, 0.4),

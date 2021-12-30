@@ -81,6 +81,8 @@
   margin-bottom: 30px;
 
   &__input {
+    position: absolute;
+    left: -1000%;
     visibility: hidden;
   }
 
